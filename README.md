@@ -1,7 +1,12 @@
-# Git Tutorial
-Git command tutorial learnt from Hasin Haydar bhai
+# Git Tutorial from Hasin Hayder
 
-# Video 01 GIT Hasin Hayder - Intro
+Hasin Haydar bhai has a very nice video tutorial series on this YouTube channel in Bengali. Here is the link: https://www.youtube.com/watch?v=M2a7OQX8te4&list=PLoR56CteKZnC0lBlHdnVnq0J3yDhgbi9w.
+
+### How to install
+
+Download Git from https://git-scm.com/downloads and install on your PC using default options. Run "Git BASH" to start managing your Git repositories.
+
+# Video 01: Intro
 
 গিট (Git) হল কোডের একটি জনপ্রিয় ভার্সন কন্ট্রোল সিস্টেম।
 যখন কয়েকজন ডেভেলপার মিলে একটা প্রজেক্টে কাজ করেন, তখন প্রজেক্টের কোড খুব সহজে ম্যানেজ করার জন্য গিট ব্যবহৃত হয়। গিট খুবই ফাস্ট। এটি অনলাইন ও অফলাইনে কাজ করা হয়।
@@ -27,19 +32,32 @@ Git command tutorial learnt from Hasin Haydar bhai
 9. git merge
 10. git stash
 
-# 02 GIT Hasin Hayder - Init, commit, log
+# Video 02: Init, commit, log
 
 ### git init
-কোন প্রজেক্ট ফোল্ডারে গিট ব্যবহার করতে হলে প্রথমেই একবার এই কমান্ড দিতে হয়।
+কোন প্রজেক্ট ফোল্ডারে গিট ব্যবহার করতে হলে প্রথমেই এই কমান্ড দিতে হয়। ঐ ফোল্ডারে একটি **.git** নামে একটি hidden ফোল্ডার তৈরী হবে। পুরো প্রজেক্টে **মাত্র একবার** এই কমান্ড ব্যবহার করতে হয়।
 
-### git add
-নতুন ফাইল গিটে যোগ করা
+**নোট**
+
+গিটের লোকাল প্রোজেক্টে ব্যবহারকারীর আইডেনটিটি সেট করতে হয়। এর জন্য কমান্ড ফাইনে নীচের কমান্ড দু'টি ব্যবহার করতে হবে।
+
+git config --global user.email "youremailaddress@example.com"
+git config --global user.name "Your Name"
 
 ### git status
-গিটে সব ধরণের এ্যাকটিভিটি সম্পর্কে রিপোর্ট পাওয়ার জন্য,
 
-### git commit -m "Give a meaningful title"
-লোকালি কোন মডিফাইড কোন ফাইলকে গিটে সেভ করে রাখার জন্য git commit কমান্ড ব্যবহৃত হয়। (-m = Message),
+গিটে সব ধরণের এ্যাকটিভিটি সম্পর্কে রিপোর্ট পাওয়ার জন্য এই কমান্ড ব্যবহার করা হয়।
+ধরি, আমাদের ফোল্ডারের মধ্যে একটি নতুন ফাইল "index.html" তৈরী করলাম। এই অবস্থায় যদি এই কমান্ড ব্যবহার করি, তবে দেখাবে যে একটি untracked file প্রোজেক্ট ফোল্ডারের মধ্যে রয়েছে। এই ফাইলকে git add দিয়ে প্রোজেক্টে যুক্ত করতে হবে।
+
+### git add
+নতুন ফাইল গিটে যোগ করতে হলে এই কমান্ড ব্যবহৃত হয়। index.html ফাইলকে গিটে যোগ করতে নিচের কমান্ড ব্যবহার করব।
+
+```
+git add index.html
+```
+
+### git commit -m "added index.html file"
+লোকালি কোন মডিফাইড কোন ফাইলকে গিটে সেভ করে রাখার জন্য git commit কমান্ড ব্যবহৃত হয়। এখানে -m অর্থ Message।
 
 ### git commit -m "Give a meaningful title" <file-name-1.txt> <file-name-2.txt>
 কোন “নির্দিষ্ট মডিফাইড ফাইলকে” গিটে সেভ করে রাখার জন্য
@@ -49,7 +67,7 @@ Git command tutorial learnt from Hasin Haydar bhai
 কিন্তু, এভাবে কমিটি করলে কোন ফাইলে কি চেঞ্জ হয়েছে তা উল্লেখ করা যায় না।
 
 ### git diff
-গিটে কোন কোন ফাইলে কি কি মডিফাই হয়েছে, তা দেখার জন্য,
+গিটে কোন কোন ফাইলে কি কি মডিফাই হয়েছে, তা দেখার জন্য
 
 ### git log
 গিটে প্রথম থেকে কি কি কাজ করা হয়েছে, তার রিপোর্ট পেতে।
@@ -61,10 +79,13 @@ Git command tutorial learnt from Hasin Haydar bhai
 ### git checkout 0602b93c79bd28e5f306124f7d9cddc42a0f8a15"
 প্রজেক্টের পূর্বে অবস্থায় ফিরে যেতে চাইলে প্রথমে git show দিয়ে যে কমিটে ফিরে যেতে যান, তার হ্যাশ কোড কপি করে নিন। এরপর কমান্ড দিন।
 
-* জরুরী:
-> কমিটের ঐ হ্যাশ কোড এর মুহূর্ত এর পরে যে সমস্ত ফাইলগুলো প্রজেক্টে যোগ করা হয়েছিল, তার সবই ভ্যানিস যাবে।
-> আগের অবস্থায় ফেরত আসতে চাইলে, নিচের কমান্ড দিন,
+**জরুরী**
+
+- কমিটের ঐ হ্যাশ কোড এর মুহূর্ত এর পরে যে সমস্ত ফাইলগুলো প্রজেক্টে যোগ করা হয়েছিল, তার সবই ভ্যানিস যাবে।
+- আগের অবস্থায় ফেরত আসতে চাইলে, নিচের কমান্ড দিন,
+```
     git checkout master
+```
 
 ### git checkout 0602b93c79bd28e5f306124f7d9cddc42a0f8a15" new.txt
 
