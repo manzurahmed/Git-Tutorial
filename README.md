@@ -1,7 +1,9 @@
 # Git Tutorial
 Git command tutorial learnt from Hasin Haydar bhai
 
-# git init
+# Video 01 GIT Hasin Hayder - Intro
+
+#### git init
 কোন প্রজেক্ট ফোল্ডারে গিট ব্যবহার করতে হলে প্রথমেই একবার এই কমান্ড দিতে হয়।
 
 # git add
