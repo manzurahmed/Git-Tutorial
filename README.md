@@ -3,7 +3,7 @@
 Hasin Haydar bhai has a very nice video tutorial series on Git in his YouTube channel in Bengali. He covers various aspects of Git in a very friedly and helpful manner.
 Here is the link: https://www.youtube.com/watch?v=M2a7OQX8te4&list=PLoR56CteKZnC0lBlHdnVnq0J3yDhgbi9w.
 
-### How to install
+### How to install Git on Windows 10 PC
 
 Download Git from https://git-scm.com/downloads and install on your PC using default options. Run "Git BASH" to start managing your Git repositories.
 
