@@ -42,8 +42,10 @@ Download Git from https://git-scm.com/downloads and install on your PC using def
 
 কমিট করার আগে গিটের লোকাল প্রোজেক্টে ব্যবহারকারীর আইডেনটিটি সেট করতে হয়। এর জন্য কমান্ড ফাইনে নীচের কমান্ড দু'টি ব্যবহার করতে হবে।
 
+```
 git config --global user.email "youremailaddress@example.com"
 git config --global user.name "Your Name"
+```
 
 ### git status
 
