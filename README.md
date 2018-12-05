@@ -150,6 +150,10 @@ git reset --hard 0602b93c79bd28e5f306124f7d9cddc42a0f8a15"
 ```
 
 ### গিট এর হিস্টরি দেখার জন্য,
+
+![Git Reflog screen shot](Git-Tutorial/images/git-reflog.jpg)
+
+
 ```
 git reflog
 ```
