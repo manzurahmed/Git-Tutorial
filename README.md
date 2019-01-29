@@ -7,6 +7,10 @@ Here is the link: https://www.youtube.com/watch?v=M2a7OQX8te4&list=PLoR56CteKZnC
 
 Download Git from https://git-scm.com/downloads and install on your PC using default options. Run "Git BASH" to start managing your Git repositories.
 
+## Clone a github repo on local pc using git
+
+Please view this git tutorial to get a quick grasp on cloning a github repo on local PC using git. After cloning, make changes to local repo and push to github to store changes permanently.
+
 # Video 01: Intro
 
 গিট (Git) হল কোডের একটি জনপ্রিয় ভার্সন কন্ট্রোল সিস্টেম।
