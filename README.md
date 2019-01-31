@@ -63,6 +63,8 @@ git config --global user.name "Your Name"
 git add index.html
 ```
 
+**নোটঃ** git add index.html দিয়ে নতুন ফাইল যোগ করার পরে যদি নতুন ফাইল বাদ দিতে হয়, তবে git reset index.html কমান্ডটি দিতে হবে।
+
 ### git commit -m "added index.html file"
 লোকালি কোন মডিফাইড কোন ফাইলকে গিটে সেভ করে রাখার জন্য git commit কমান্ড ব্যবহৃত হয়; আর সাথে -m প্যারামিটার ব্যবহার করে একটা নোট দিতে হয়। কি কারণে, বা কি ধরনের ফাইল এ্যাড করা হচ্ছে, তা এখানে লিখতে হবে। এখানে -m অর্থ Message।
 
