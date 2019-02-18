@@ -9,7 +9,13 @@ Download Git from https://git-scm.com/downloads and install on your PC using def
 
 ## Clone a github repo on local pc using git
 
-Please view this git tutorial to get a quick grasp on cloning a github repo on local PC using git. After cloning, make changes to local repo and push to github to store changes permanently.
+In order to clone a GitHub repo, copy its URL. In your PC, start Terminal or Command Promp and navigate to your folder where you would like to clone the repo. Type the following command:
+
+```
+git clone https://github.com/manzurahmed/reactjs-techsith
+```
+
+Git will create a new folder called **reactjs-techsith** and download all files in that folder.
 
 # Video 01: Intro
 
