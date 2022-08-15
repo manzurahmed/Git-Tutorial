@@ -239,3 +239,25 @@ $ git remote -v
 $ git push origin main
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 ```
+
+# Renaming the Local master Branch to main
+
+The first step is to rename the "master" branch in your local Git repositories:
+
+```
+$ git branch -m master main
+```
+
+Let's quickly check if this has worked as expected:
+
+```
+$ git status
+On branch main
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+```
+
+So far, so good! The local branch has been renamed - but we now need to make some changes on the remote repository as well!
+
+Source: https://www.git-tower.com/learn/git/faq/git-rename-master-to-main
