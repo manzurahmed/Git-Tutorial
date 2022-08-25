@@ -240,6 +240,22 @@ $ git push origin main
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 ```
 
+# How can I create a Git repository with the default branch name other than "master"?
+
+Since git version 2.28.0 the git init command now takes a --initial-branch (or -b for short) parameter. These two commands create a new Git repo with a branch named "trunk", which always made more sense to me than "master" (master of what?):
+
+```
+git init --initial-branch=trunk
+git init -b trunk
+```
+
+This is configurable with the init.defaultBranch setting. If I want all new repos to have "trunk" as the default branch:
+
+```
+git config --global init.defaultBranch trunk
+```
+
+
 # Renaming the Local master Branch to main
 
 The first step is to rename the "master" branch in your local Git repositories:
