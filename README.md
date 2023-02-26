@@ -301,3 +301,38 @@ $git branch -r
 ```
 $git branch -a
 ```
+
+## Create a new Branch
+```
+$ git branch feature1
+```
+
+I can create a new branch and navigate to the branch with git checkout:
+```
+$ git checkout -b feature1
+```
+
+## Navigate to a branch
+```
+$ git checkout feature1
+```
+
+## Git Merge
+
+To merge a branch in master (main) branch, first, go to the main branch.
+
+```
+$ git checkout main
+```
+
+Then issue the merge command:
+
+```
+$ git merge feature1
+```
+
+## Delete a branch
+
+```
+git branch -d feature1
+```
