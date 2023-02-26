@@ -86,12 +86,17 @@ git add index.html
 
 ### git log
 
-গিটের কোন রিপোজিটরিতে প্রথম থেকে কি কি কাজ করা হয়েছে, তার রিপোর্ট পেতে।
+গিটের কোন রিপোজিটরিতে প্রথম থেকে কি কি commit করা হয়েছে, তার রিপোর্ট পেতে।
 
 **নির্দিষ্ট একটি ফাইলের লগ** দেখতে চাইলে,
 
 ```
 git log filename.txt
+```
+
+সংক্ষিপ্তাকারে লগ দেখতে চাইলে, এই কমান্ড দিব:
+```
+git log --oneline
 ```
 
 ### git show 0602b93c79bd28e5f306124f7d9cddc42a0f8a15
@@ -277,3 +282,22 @@ nothing to commit, working tree clean
 So far, so good! The local branch has been renamed - but we now need to make some changes on the remote repository as well!
 
 Source: https://www.git-tower.com/learn/git/faq/git-rename-master-to-main
+
+# Create a new branch
+
+## Check the list of branches in a project
+```
+$ git branch
+```
+
+## Check the list of branches in Remote GitHub
+
+```
+$git branch -r
+```
+
+## Check the list of branches in local repository
+
+```
+$git branch -a
+```
