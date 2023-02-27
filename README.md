@@ -54,8 +54,14 @@ Git will create a new folder called **reactjs-techsith** and download all files 
 
 ```
 git config --global user.email "youremailaddress@example.com"
-git config --global user.name "Your Name"
+git config --global user.name "github_id"
 ```
+
+### git config --global credential.helper cache
+
+যতবার গিটহাব থেকে pull বা push করব, Terminal এ ততবার লগইন ক্রেডেনশিয়াল (username এবং password) টাইপ করতে হয়। গিটহ্যাব বর্তমানে পাসওয়ার্ড সাপোর্ট করে না। তার পরিবর্তে Token ব্যবহার করতে হয়। এই কারণে গিটের গ্লোবাল সেটিং এ username এবং token সেট করে নিতে হয়।
+
+Terminal এ উপরের কমান্ড দেয়ার পর git pull বা git push করলে যখন username এবং password চাইবে, সেটা দেয়ার পর পরবর্তীতে আর username এবং password চাইবে না।
 
 ### git status
 
