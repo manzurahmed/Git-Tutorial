@@ -342,3 +342,10 @@ $ git merge feature1
 ```
 git branch -d feature1
 ```
+
+
+# How to add a local repository to GitHub
+
+Follow this official guideline on GitHub:
+
+https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
