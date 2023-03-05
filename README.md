@@ -349,3 +349,36 @@ git branch -d feature1
 Follow this official guideline on GitHub:
 
 https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github
+
+# git set-upstream
+
+The git set-upstream allows you to set the default remote branch for your current local branch. By default, every pull command sets the master as your default remote branch.
+
+Sometimes we are trying to push some changes to the remote server, but it will show the error like "error: failed to push some refs to 'https :< remote repository Address>." There may be the reason that you have not set your remote branch. We can set the remote branch for the local branch. We will implement the following process to set the remote server:
+
+To check the remote server, use the below command:
+```
+git remote -v  
+```
+
+It will result as follows:
+
+```
+git remote -v
+origin  https://github.com/manzurahmed/puppeteer.git (fetch)
+origin  https://github.com/manzurahmed/puppeteer.git (push)
+```
+Now, check the available branches, run the below command:
+```
+git branch -a
+```
+
+The above command will list the branches on the local and remote repository. To learn more about branches, click here. Now push the changes to remote server and set the particular branch as default remote branch for the local repository. To push the changes and set the remote branch as default, run the below command:
+
+```
+git push --set-upstream origin main
+```
+
+The above command will set the master branch as the default remote branch.
+
+Source: https://www.javatpoint.com/git-upstream-and-downstream
